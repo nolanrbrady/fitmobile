@@ -1,0 +1,13 @@
+{
+  "name": "onsenui-v2-vue-navigation",
+  "version": "2.4.0+20171205.1",
+  "description": "",
+  "dependencies": {
+    "css-loader": "*",
+    "onsenui": "~2.7.0",
+    "vue": "~2.5.0",
+    "vue-onsenui": "~2.3.0",
+    "vue-template-compiler": "~2.5.0",
+    "vue-loader": "11.0.0"
+  }
+}
