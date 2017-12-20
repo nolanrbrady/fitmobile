@@ -1,6 +1,6 @@
 <template>
   <v-ons-page class="page">
-    <custom-toolbar class="toolbar"><strong>FIT Micro</strong></custom-toolbar>
+    <!-- <custom-toolbar class="toolbar"><strong>FIT Micro</strong></custom-toolbar> -->
     <div class="container">
 	      <h2>Welcome to <br /><span class="fit">FIT</span> Micro</h2>
 				<br />
@@ -44,9 +44,9 @@
 .container{
 	flex: 1;
 	height: 100%;
-	padding-top: 10vh;
+	padding-top: 15vh;
 	text-align: center;
-	background: linear-gradient(#0D6C8A, #FD7F23);
+	/*background: linear-gradient(#0D6C8A, #FD7F23);*/
 }
 .toolbar{
 	background-color: #0D6C8A;
