@@ -4,6 +4,10 @@
   "description": "",
   "dependencies": {
     "css-loader": "*",
+    "fuse.js": "^3.2.0",
+    "ingreedy-js": "^0.1.0",
+    "install": "^0.10.2",
+    "npm": "^5.6.0",
     "onsenui": "~2.7.0",
     "vue": "~2.5.0",
     "vue-loader": "11.0.0",

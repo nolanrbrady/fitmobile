@@ -50,7 +50,6 @@
 </script>
 <style>
 .container{
-	background-color: darkgrey;
 	padding-bottom: 3vh;
 }
 .module {
@@ -91,5 +90,15 @@ color: white;
 }
 .center{
 	text-align: center;
+}
+input{
+	font-size: 3vh;
+	width: 75vw;
+	color: black;
+}
+input::placeholder{
+	text-align: center;
+	font-size: 3vh;
+	color: black;
 }
 </style>

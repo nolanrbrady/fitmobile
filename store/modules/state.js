@@ -1,5 +1,5 @@
 import fakeState from '../fakeStateFitnessNutrition';
-import App from '../../App.vue';
+import App from '../../src/App.vue';
 
 //Initial State
 const state = {

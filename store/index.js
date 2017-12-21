@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import {app, dashboard, fitnessNutrition} from './modules';
+import state from './modules/state.js';
 
 import * as getters from './getters';
 
@@ -11,7 +11,7 @@ const store = new Vuex.Store({
   strict: true,  // process.env.NODE_ENV !== 'production',
   getters,
   modules: {
-    app, dashboard, fitnessNutrition
+		state
   },
   mutations: {}
 })
