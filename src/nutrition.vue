@@ -26,13 +26,69 @@
 
 
   export default {
-		data(){
+		data() {
 			return{
 				spokenMealText: '',
+				workout: null,
+				item: null,
+				waterIntake: 0,
+				nutritrionItems: [],
+				exerciseItems: [],
+				ingredientTemplate: IngredientTemplate,
+				exerciseTemplate: ExerciseTemplate,
+				itemData: {},
+				mealItems: [],
+				loading: false,
+				activeTab: '',
+				cumulativeNutrition: [],
+				recipeIngredients: [],
+				recipeURL: '',
+				spokenMealText: '',
+				exerciseTableFields: {
+					name: {
+						label: 'Name',
+					},
+					category: {
+						label: 'Category',
+						formatter: 'getExerciseCategoryName'
+					},
+					sets: {
+						label: 'Sets',
+					},
+					reps: {
+						label: 'Reps',
+					},
+					weight: {
+						label: 'Weight',
+					},
+				},
+				ingredientTableFields: {
+					name: {
+						label: 'Name',
+					},
+					calories: {
+						label: 'Calories',
+					},
+					protein: {
+						label: 'Protein',
+					},
+					carbohydrates: {
+						label: 'Carbs',
+					},
+					sugar: {
+						label: 'Sugar',
+					},
+					fat: {
+						label: 'Fat',
+					},
+					fiber: {
+						label: 'Fiber',
+					},
+				}
 			}
 		},
 		computed: {
-			...mapState('state', [
+			...mapState('appState', [
 				'equipmentKey',
 				'exerciseKey',
 				'currentExercise',
@@ -41,7 +97,7 @@
 				'loggedIngredients',
 				'totalWaterIntake',
 			]),
-			...mapGetters('fitnessNutrition', [
+			...mapGetters('appState', [
 				'totalNutritionalValues',
 			]),
 		},
