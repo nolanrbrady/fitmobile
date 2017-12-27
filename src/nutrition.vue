@@ -10,6 +10,15 @@
 					<v-ons-button @click="getIngredients" class="button">Get Macros</v-ons-button>
 					<v-ons-button class="button">Log It</v-ons-button>
 				</div>
+				<div class="table">
+					<v-ons-list>
+						<v-ons-list-item>Calories</v-ons-list-item>
+						<v-ons-list-item>Calories</v-ons-list-item>
+						<v-ons-list-item>Calories</v-ons-list-item>
+						<v-ons-list-item>Calories</v-ons-list-item>
+						<v-ons-list-item>Calories</v-ons-list-item>
+					</v-ons-list>
+				</div>
 		</div>
   </v-ons-page>
 </template>
@@ -21,8 +30,7 @@
 	import signup from './signup';
 	import { mapState, mapActions, mapGetters, mapMutations } from 'vuex';
 	import Fuse from 'fuse.js';
-	import * as Ingreedy from "ingreedyjs";
-	import SpeechToText from 'speech-to-text';
+	import * as Ingreedy from "ingreedy-js";
 
 
   export default {
